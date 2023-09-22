@@ -17,7 +17,7 @@ const Dashboard = () => {
     let token = localStorage.getItem("usersdatatoken")
     // console.log(token)
 
-    const res = await fetch("/validuser",{
+    const res = await fetch("https://authenticationbe.onrender.com/validuser",{
       method : "GET",
       headers : {
         "Content-Type" : "application/json",

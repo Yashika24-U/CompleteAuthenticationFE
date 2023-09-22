@@ -16,7 +16,7 @@ const PasswordReset = () => {
     const sendLink = async (e)=>{
         e.preventDefault();
 
-        const res = await fetch("proxy/sendpasswordlink",{
+        const res = await fetch("https://authenticationbe.onrender.com/sendpasswordlink",{
             method : "POST",
             headers:{
                 "Content-Type":"application/json"

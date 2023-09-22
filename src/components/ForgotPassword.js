@@ -12,7 +12,7 @@ function ForgotPassword() {
     const[message,setMessage] = useState("")
 
     const userValid  = async()=>{
-        const res = await fetch(`proxy/forgotpassword/${id}/${token}`,{
+        const res = await fetch(`https://authenticationbe.onrender.com/forgotpassword/${id}/${token}`,{
             method : "GET",
             headers : {
                 "Content-Type":"application/json"
@@ -37,7 +37,7 @@ const setVal = (e)=>{
 
 const sendpassword = async(e)=>{
     e.preventDefault();
-    const res =  await fetch(`proxy/${id}/${token}`,{
+    const res =  await fetch(`https://authenticationbe.onrender.com/${id}/${token}`,{
         method : "POST",
         headers : {
             "Content-Type":"application/json"

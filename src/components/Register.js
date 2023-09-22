@@ -58,7 +58,7 @@ function Register() {
 
             // console.log("Registered Successfully")
 
-            const data = await fetch("proxy/register",{
+            const data = await fetch("https://authenticationbe.onrender.com/register",{
                 method:"POST",
                 headers:{
                     "content-Type":"application/json",
