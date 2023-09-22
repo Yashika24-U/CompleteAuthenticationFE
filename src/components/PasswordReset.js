@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 
+
 const PasswordReset = () => {
 
     const [email,setEmail] = useState("")
@@ -15,7 +16,7 @@ const PasswordReset = () => {
     const sendLink = async (e)=>{
         e.preventDefault();
 
-        const res = await fetch("/sendpasswordlink",{
+        const res = await fetch("proxy/sendpasswordlink",{
             method : "POST",
             headers:{
                 "Content-Type":"application/json"

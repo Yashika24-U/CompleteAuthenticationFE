@@ -53,10 +53,10 @@ const loginuser = async(e)=>{
     } else{
         
         
-        const data = await fetch("/login",{
+        const data = await fetch("proxy/login",{
             method:"POST",
             headers:{
-                "content-Type":"application/json",
+                "Content-Type":"application/json",
             },
             body:JSON.stringify({
                 email,password

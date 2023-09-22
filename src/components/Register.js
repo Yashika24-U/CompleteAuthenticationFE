@@ -58,7 +58,7 @@ function Register() {
 
             // console.log("Registered Successfully")
 
-            const data = await fetch("/register",{
+            const data = await fetch("proxy/register",{
                 method:"POST",
                 headers:{
                     "content-Type":"application/json",

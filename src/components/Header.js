@@ -27,7 +27,7 @@ const Header = () =>{
         let token = localStorage.getItem("usersdatatoken")
         // console.log(token)
     
-        const res = await fetch("/logout",{
+        const res = await fetch("proxy/logout",{
           method : "GET",
           headers : {
             "Content-Type" : "application/json",
