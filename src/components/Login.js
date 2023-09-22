@@ -53,7 +53,7 @@ const loginuser = async(e)=>{
     } else{
         
         
-        const data = await fetch("https://authenticationbe.onrender.com/forgotpassword/login",{
+        const data = await fetch("/login",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
